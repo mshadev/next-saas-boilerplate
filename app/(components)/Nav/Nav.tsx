@@ -1,5 +1,6 @@
 import { Menu } from "lucide-react";
-import Dropdown from "../Dropdown/Dropdown";
+import Dropdown from "@/app/(components)/Dropdown/Dropdown";
+import Link from "next/link";
 
 export default function Nav() {
   return (
@@ -7,7 +8,7 @@ export default function Nav() {
       <div className="cursor-pointer text-2xl">SaaSy Boilerplate</div>
 
       <Dropdown icon={<Menu />}>
-        <div>Login</div>
+        <Link href="/api/auth/signin">Login</Link>
       </Dropdown>
     </div>
   );

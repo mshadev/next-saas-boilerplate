@@ -1,13 +1,14 @@
 import { Menu } from "lucide-react";
+import Dropdown from "../Dropdown/Dropdown";
 
 export default function Nav() {
   return (
     <div className="navbar flex w-full justify-between">
       <div className="cursor-pointer text-2xl">SaaSy Boilerplate</div>
 
-      <button className="btn btn-round btn-ghost">
-        <Menu />
-      </button>
+      <Dropdown icon={<Menu />}>
+        <div>Login</div>
+      </Dropdown>
     </div>
   );
 }

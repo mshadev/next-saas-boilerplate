@@ -3,12 +3,14 @@
 import React, { Children } from "react";
 
 export interface IDropdownProps {
-  children?: React.ReactNode[];
+  children?: React.ReactNode | React.ReactNode[];
   caption?: string;
+  icon?: React.ReactNode;
 }
 
 export default function Dropdown({
   children,
+  icon,
   caption = "Click",
 }: IDropdownProps) {
   const menuRender = Children.map(children, (item, key) => (
@@ -18,13 +20,13 @@ export default function Dropdown({
   return (
     <div className="dropdown dropdown-end">
       <button tabIndex={0} role="button" className="btn m-1">
-        {caption}
+        {caption && icon}
       </button>
 
       {children && (
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+          className="dropdown-content z-[1] menu p-4 shadow bg-base-100 rounded-box w-40 m-1"
         >
           {menuRender}
         </ul>

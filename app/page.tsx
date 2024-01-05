@@ -23,17 +23,17 @@ export default async function Home() {
 
               <ul className="hidden md:block text-base-content-secondary leading-relaxed space-y-1 mt-4">
                 <li className="flex lg:justify-start gap-2">
-                  <Check />
+                  <Check color="#00A96E" />
                   MongoDB & SupaBase
                 </li>
 
                 <li className="flex lg:justify-start gap-2">
-                  <Check />
+                  <Check color="#00A96E" />
                   Authorization: OAuth, Email, Magic Link
                 </li>
 
                 <li className="flex items-center justify-center lg:justify-start gap-2">
-                  <Check />
+                  <Check color="#00A96E" />
                   Easy start
                 </li>
               </ul>

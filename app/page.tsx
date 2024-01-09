@@ -1,4 +1,3 @@
-import { auth } from "@/auth";
 import Nav from "./(components)/Nav/Nav";
 import { Check } from "lucide-react";
 
@@ -18,7 +17,7 @@ export default async function Home() {
 
             <div>
               <p className="text-lg text-base-content-secondary leading-relaxed">
-                Easy start your need product with Auth & Email & Checkout
+                Easy start your product with Auth & Email & Checkout
               </p>
 
               <ul className="hidden md:block text-base-content-secondary leading-relaxed space-y-1 mt-4">

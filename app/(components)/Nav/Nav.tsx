@@ -1,8 +1,9 @@
 import { Menu } from "lucide-react";
 import Dropdown from "@/app/(components)/Dropdown/Dropdown";
 import Link from "next/link";
+import { auth } from "@/auth";
 
-export default function Nav() {
+export default async function Nav() {
   return (
     <div className="navbar flex w-full justify-between">
       <div className="cursor-pointer text-2xl">SaaSy Boilerplate</div>
